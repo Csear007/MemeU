@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
-import {View, Text, FlatList, Image} from 'react-native';
+import {Text, FlatList, Dimensions} from 'react-native';
+import { Icon, Card} from 'react-native-elements';
+import { Image, Tile, View, Button} from '@shoutem/ui';
+
+
 
 
 
@@ -13,30 +17,48 @@ class HelloWorld extends Component {
     render(){
 
         const fake_data = [
-            {title: 'meme1'},
-            {title: 'meme2'},
-            {title: 'meme3'},
-            {title: 'meme4'},
-            {title: 'meme5'},
-            {title: 'meme6'},
-            {title: 'meme7'},
-            {title: 'meme8'},
-            {title: 'meme9'},
-            {title: 'meme10'}
+            {title: 'meme1', source: require('../assets/images/jesus-meme.jpg')},
+            {title: 'meme2', source: require('../assets/images/jesus-meme.jpg')},
+            {title: 'meme3', source: require('../assets/images/jesus-meme.jpg')},
+            {title: 'meme4', source: require('../assets/images/jesus-meme.jpg')},
+            {title: 'meme5', source: require('../assets/images/jesus-meme.jpg')},
+            {title: 'meme6', source: require('../assets/images/jesus-meme.jpg')},
+            {title: 'meme7', source: require('../assets/images/jesus-meme.jpg')},
+            {title: 'meme8', source: require('../assets/images/jesus-meme.jpg')},
+            {title: 'meme9', source: require('../assets/images/jesus-meme.jpg')},
+            {title: 'meme10', source: require('../assets/images/jesus-meme.jpg')},
         ];
+
+        let screen_width = Dimensions.get('window').width;
+        let screen_height = Dimensions.get('window').height;
             
         return (
             <View>
                 <FlatList 
                     data={fake_data}
                     renderItem={({item}) => 
-                        <View>
-                            <Text>{item.title}</Text>
+                        <Card
+                           style= {{width: screen_width}}
+                           title={item.title}
+                            >
                             <Image 
-                                style={{ width: 50, height: 50}}
-                                source={require('../assets/images/jesus-meme.jpg')}/>
-                        </View>
+                                styleName='large-square'
+                                source={item.source}
+                            />
+                            <View styleName="horizontal flexible">
+                                <Button styleName="border full-width">
+                                    <Icon name="thumb-up" />
+                                </Button>
+                                <Button styleName="border full-width">
+                                    <Icon name="thumb-down" />
+                                </Button>
+                            </View>
+                        </Card>
                         }
+
+                    refreshing={false}
+
+                    onRefresh={() => console.log('this is refreshing')}
                 />
             </View>
         )

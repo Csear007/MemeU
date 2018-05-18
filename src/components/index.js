@@ -9,7 +9,7 @@ import MemeCreator from './MemeCreator';
 const HomeScreenRouter = TabNavigator(
     {
         Home: {screen: HelloWorld},
-        Creator: MemeCreator
+        Creator: {screen: MemeCreator}
     },
     {
         tabBarOptions: {
