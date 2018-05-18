@@ -7,7 +7,7 @@ import { Image, Tile, View, Button} from '@shoutem/ui';
 
 
 
-class HelloWorld extends Component {
+class MemeFeed extends Component {
 
     constructor(){
         super();
@@ -68,4 +68,4 @@ class HelloWorld extends Component {
 }
 
 
-export default HelloWorld;
+export default MemeFeed;

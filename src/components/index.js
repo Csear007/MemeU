@@ -1,15 +1,25 @@
-import {TabNavigator} from 'react-navigation';
+import {TabNavigator, StackNavigator} from 'react-navigation';
 
-import HelloWorld from './HelloWorld';
+import MemeFeed from './MemeFeed';
 import MemeCreator from './MemeCreator';
+import MemeGenerator from './MemeGenerator';
 
 
+const MemeGalleryStack = StackNavigator(
+    {
+        Gallery: {screen: MemeCreator},
+        Creator: {screen: MemeGenerator}
+    },
+    {
+        initialRouteName: 'Gallery'
+    }
 
+)
 
 const HomeScreenRouter = TabNavigator(
     {
-        Home: {screen: HelloWorld},
-        Creator: {screen: MemeCreator}
+        Home: {screen: MemeFeed},
+        Creator: MemeGalleryStack,
     },
     {
         tabBarOptions: {
