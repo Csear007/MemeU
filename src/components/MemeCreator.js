@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import { Text} from 'react-native';
-import {DropDownMenu, NavigationBar, ListView, Screen, GridRow, Card, Subtitle, View, Caption, Image} from '@shoutem/ui';
+import {DropDownMenu, NavigationBar, ListView, Screen, GridRow, Card, Subtitle, View, Caption, Image, TouchableOpacity} from '@shoutem/ui';
 
 
 
 class MemeCreator extends Component {
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
+        // console.log(props);
         this.state = {
             categories: [
               {
@@ -83,11 +84,41 @@ class MemeCreator extends Component {
                     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5aLVm0cOojrUiXNPKw6PFr1Dp_DP6Y1xTxddpjtWow-fmGo8",
                     description: "A fine meme of dicaprio"
                   },
+                  {
+                    model: "Dicaprio",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5aLVm0cOojrUiXNPKw6PFr1Dp_DP6Y1xTxddpjtWow-fmGo8",
+                    description: "A fine meme of dicaprio"
+                  },
+                  {
+                    model: "Dicaprio",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5aLVm0cOojrUiXNPKw6PFr1Dp_DP6Y1xTxddpjtWow-fmGo8",
+                    description: "A fine meme of dicaprio"
+                  },
+                  {
+                    model: "Dicaprio",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5aLVm0cOojrUiXNPKw6PFr1Dp_DP6Y1xTxddpjtWow-fmGo8",
+                    description: "A fine meme of dicaprio"
+                  },
                 ]
               },
               {
                 category: "Advice",
                 images: [
+                  {
+                    model: "Correct Meme",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsZ34bMdzxAZKjhlzBhMIjHqN4EAza0dPJ4l1pe-U96JfnfZ8X",
+                    description: " A fine advice meme"
+                  },
+                  {
+                    model: "Correct Meme",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsZ34bMdzxAZKjhlzBhMIjHqN4EAza0dPJ4l1pe-U96JfnfZ8X",
+                    description: " A fine advice meme"
+                  },
+                  {
+                    model: "Correct Meme",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsZ34bMdzxAZKjhlzBhMIjHqN4EAza0dPJ4l1pe-U96JfnfZ8X",
+                    description: " A fine advice meme"
+                  },
                   {
                     model: "Correct Meme",
                     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsZ34bMdzxAZKjhlzBhMIjHqN4EAza0dPJ4l1pe-U96JfnfZ8X",
@@ -153,11 +184,41 @@ class MemeCreator extends Component {
                     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBC0A1NFW5I0oBC89cj992xaTIeELpURPUlIO38VXHtod80vD7g",
                     description: "A fine meme of fry"
                   },
+                  {
+                    model: "Fry Confused",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBC0A1NFW5I0oBC89cj992xaTIeELpURPUlIO38VXHtod80vD7g",
+                    description: "A fine meme of fry"
+                  },
+                  {
+                    model: "Fry Confused",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBC0A1NFW5I0oBC89cj992xaTIeELpURPUlIO38VXHtod80vD7g",
+                    description: "A fine meme of fry"
+                  },
+                  {
+                    model: "Fry Confused",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBC0A1NFW5I0oBC89cj992xaTIeELpURPUlIO38VXHtod80vD7g",
+                    description: "A fine meme of fry"
+                  },
                 ]
               },
               {
                 category: "Rage",
                 images:[
+                  {
+                    model: "FUUUUUU",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ97l72mStWoFtrvIBMGicQgSCQO0s4dgb9MBRJ_Qd1xou6zeZbA",
+                    description: "does more need to be said?"
+                  },
+                  {
+                    model: "FUUUUUU",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ97l72mStWoFtrvIBMGicQgSCQO0s4dgb9MBRJ_Qd1xou6zeZbA",
+                    description: "does more need to be said?"
+                  },
+                  {
+                    model: "FUUUUUU",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ97l72mStWoFtrvIBMGicQgSCQO0s4dgb9MBRJ_Qd1xou6zeZbA",
+                    description: "does more need to be said?"
+                  },
                   {
                     model: "FUUUUUU",
                     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ97l72mStWoFtrvIBMGicQgSCQO0s4dgb9MBRJ_Qd1xou6zeZbA",
@@ -223,6 +284,21 @@ class MemeCreator extends Component {
                     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAtAExKUsJnRveovMKznW9CgnG2F31GC_CDeH2zj3u75-ITBiR",
                     description: "He's too ahead of everyone"
                   },
+                  {
+                    model: "Memes Ahead",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAtAExKUsJnRveovMKznW9CgnG2F31GC_CDeH2zj3u75-ITBiR",
+                    description: "He's too ahead of everyone"
+                  },
+                  {
+                    model: "Memes Ahead",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAtAExKUsJnRveovMKznW9CgnG2F31GC_CDeH2zj3u75-ITBiR",
+                    description: "He's too ahead of everyone"
+                  },
+                  {
+                    model: "Memes Ahead",
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAtAExKUsJnRveovMKznW9CgnG2F31GC_CDeH2zj3u75-ITBiR",
+                    description: "He's too ahead of everyone"
+                  },
                 ]
               },
             ],
@@ -231,9 +307,18 @@ class MemeCreator extends Component {
 
 
 
+    buttonPressed(){
+      console.log('this image is being clicked!!!');
+    }
 
-    renderGridRow(rowData, sectionId, index){
+
+
+
+    renderGridRow(rowData, sectionId, index, navigation){
         const cellviews = rowData.map( ({model, url, description})  => { return(
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Creator', {image_source: url})}
+          >
             <Card styleName="flexible">
                 <Image
                     styleName="medium-wide"
@@ -246,6 +331,7 @@ class MemeCreator extends Component {
                     </View>
                 </View>
             </Card>
+          </TouchableOpacity>
 
         )});
 
@@ -278,7 +364,7 @@ class MemeCreator extends Component {
                 />
                 <ListView 
                     data={groupedData}
-                    renderRow={this.renderGridRow}
+                    renderRow={(rowData, sectionId, index) => this.renderGridRow(rowData, sectionId, index, this.props.navigation)}
                 />
                 
             </Screen>
