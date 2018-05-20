@@ -4012,7 +4012,7 @@ react-native-gesture-responder@0.1.1:
   dependencies:
     react-timer-mixin "^0.13.3"
 
-"react-native-lightbox@github:shoutem/react-native-lightbox#v0.7.2":
+react-native-lightbox@shoutem/react-native-lightbox#v0.7.2:
   version "0.7.2"
   resolved "https://codeload.github.com/shoutem/react-native-lightbox/tar.gz/91f3f58759e9901d9c006b01ce32d074606eda0e"
   dependencies:
@@ -4027,7 +4027,7 @@ react-native-linear-gradient@~2.2.0:
   dependencies:
     prop-types "^15.5.10"
 
-"react-native-navigation-experimental-compat@github:shoutem/react-native-navigation-experimental-compat#fbce4b9e478f808634a98dac48901ec6ed4ee9fd":
+react-native-navigation-experimental-compat@shoutem/react-native-navigation-experimental-compat#fbce4b9e478f808634a98dac48901ec6ed4ee9fd:
   version "1.1.1"
   resolved "https://codeload.github.com/shoutem/react-native-navigation-experimental-compat/tar.gz/fbce4b9e478f808634a98dac48901ec6ed4ee9fd"
   dependencies:
@@ -4055,7 +4055,7 @@ react-native-scroller@0.0.6:
   dependencies:
     prop-types "^15.6.0"
 
-"react-native-transformable-image@github:shoutem/react-native-transformable-image#v0.0.20":
+react-native-transformable-image@shoutem/react-native-transformable-image#v0.0.20:
   version "0.0.20"
   resolved "https://codeload.github.com/shoutem/react-native-transformable-image/tar.gz/ef2e93fa9425bbb479bccec64d165ec85e76e949"
   dependencies:
@@ -4077,6 +4077,10 @@ react-native-vector-icons@~4.3.0:
     lodash "^4.0.0"
     prop-types "^15.5.10"
     yargs "^8.0.2"
+
+react-native-view-shot@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-view-shot/-/react-native-view-shot-2.3.0.tgz#ac01880d3c560f0dc918cd7cdf8854c6ff85ca31"
 
 react-native-view-transformer@shoutem/react-native-view-transformer#v0.0.29:
   version "0.0.29"
