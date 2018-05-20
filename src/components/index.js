@@ -1,4 +1,4 @@
-import {TabNavigator, StackNavigator} from 'react-navigation';
+import {TabNavigator, StackNavigator, DrawerNavigator} from 'react-navigation';
 
 import MemeFeed from './MemeFeed';
 import MemeCreator from './MemeCreator';
@@ -16,16 +16,12 @@ const MemeGalleryStack = StackNavigator(
 
 )
 
-const HomeScreenRouter = TabNavigator(
+const HomeScreenRouter = DrawerNavigator(
     {
         Home: {screen: MemeFeed},
         Creator: MemeGalleryStack,
     },
     {
-        tabBarOptions: {
-
-        },
-        tabBarPosition: 'bottom',
         initialRouteName: 'Home'
     }
 )
